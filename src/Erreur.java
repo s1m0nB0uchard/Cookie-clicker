@@ -2,6 +2,7 @@
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.*;
 import javafx.scene.control.*;
 
@@ -16,6 +17,7 @@ public class Erreur {
 
         Label texte = new Label(message);
         Button closeButton = new Button("CLOSE");
+        closeButton.setTextFill(Color.DARKCYAN);
         closeButton.setOnAction(n -> {
             window.close();
         });
